@@ -223,6 +223,11 @@
 		  background-size: cover;
 	
 	}
+	input.lh {
+		padding: 10px;
+		-webkit-border-radius: 4px;
+		border: 0;
+	}
 	#review-app .review-album  .shopping {
 		width: 200px;
 		text-decoration: none;
@@ -370,11 +375,6 @@
 	#contact .contact-lh nav ul > li > button {
 		padding: 8px;
 		border-radius: 4px;
-	}
-	input[type="text"] {
-		padding: 10px;
-		-webkit-border-radius: 4px;
-		border: 0;
 	}
 	/*MAIN*/
 	@keyframes mainmove {
