@@ -1,0 +1,438 @@
+/*Home*/
+	/*header*/
+
+	body, html {
+		font-family: 'Roboto', sans-serif;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	
+	#vh-hd-home {
+		display: flex;
+		/*justify-content: space-between;*/
+		background-color: #00000087;
+		height: 69px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+		
+	}
+	#vh-hd-home img {
+		padding-left: 30px;
+	}
+	#vh-hd-home nav {
+		padding: 11px;
+	}
+	#vh-hd-home nav ul {
+		display: flex;
+		box-sizing: border-box;
+	}
+	#vh-hd-home nav ul > li {
+		list-style: none;
+	
+	}
+	#vh-hd-home nav ul > li > a {
+		text-decoration: none;
+		color: white;
+		vertical-align: baseline;
+		margin-right: 30px;
+		overflow: hidden;
+	
+	}
+	#vh-hd-home nav ul > li > a:hover {
+		color: #CC00CC;
+	}
+	#vh-hd-home nav ul .a-phone > a {
+		padding: 10px;
+		background-color: #CC00CC;
+		border: #000000a6 solid 1px;
+		-webkit-border-radius: 6px;
+	}
+	#vh-hd-home nav ul .a-phone > a:hover {
+		color: white;
+		opacity: 0.8;
+	}
+	
+	/*review*/
+	@keyframes slide {
+		0% {
+			background-image: url('http://vietinhomes.vn/wp-content/uploads/2017/02/vgr-1920.jpg');
+		}
+		25% {
+			background-image: url('http://vietinhomes.vn/wp-content/uploads/2017/02/vgr-1920.jpg');
+		}
+		50% {
+			background-image: url('https://vincityproject.com/wp-content/uploads/2019/03/phoi-canh-4-1920x1080.jpg');
+		}
+		75% {
+			background-image: url('https://vincityproject.com/wp-content/uploads/2019/03/phoi-canh-4-1920x1080.jpg');
+		}
+		100% {
+			background-image: url('http://vietinhomes.vn/wp-content/uploads/2017/02/vgr-1920.jpg');
+		}
+	
+	}
+	#vh-p-home .background-home {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		padding-top: calc(100% / 16 * 9);
+		background-size: cover;
+		background-position: center center;
+		animation: slide 10s infinite;
+	}
+	.bx-pager {
+		display: none;
+	}
+	
+	#vh-p-home h3 {
+		color: #0033CC;
+	}
+	#vh-p-home h1 {
+		color: #FF00CC;
+	}
+	#icon-home {
+		display: flex;
+		text-align: center;
+		background-color: #FF33FF;
+	}
+	@keyframes mymove {
+		  0%  {top: 0px;}
+		  50%  {top: 50px}
+		  100% {top: 0px;}
+	}
+	#icon-home .icon-p-home {
+		padding: 60px;
+	}
+	#icon-home .icon-p-home > .fas {
+		font-size: 130px;
+		position: relative;
+		margin-bottom: 50px;
+		animation: mymove 3s ease infinite;
+	}
+	#review-home {
+		box-sizing: border-box;
+		display: block;
+		text-align: center;
+		color: #444444;
+	}
+	#review-v-home {
+		display: inline-block;
+		width: 100%;
+		color: #444444;
+	}
+	#review-v-home .review-nav {
+		display: inline-block;
+		width: 45%;
+	}
+	#review-v-home .review-nav ul {
+		padding-right: 30px;
+		padding-left: 67px;
+	}
+	.review-vh {
+		display: flex;
+	}
+	.review-vh img {
+		width: 50%;
+		height: 31em;
+	}
+	.review-vh .review-map-p {
+		height: 100%;
+		margin: 0;
+		text-align: center;
+		padding: 45px;
+		background: linear-gradient(to bottom, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,36,0,1) 100%);
+	}
+	.review-vh .review-map-p2 {
+		text-align: left;
+		background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+	}
+	#review-app {
+		background-image: url('https://vinhomesoceanparkz.vn/wp-content/uploads/2019/03/11.jpg');
+		background-size: cover;
+		color: white;
+		background-attachment: fixed;
+		background-position: center center;
+		background-color: #CCCCCC;
+		padding: 30px;
+	}
+	#review-app .review-app-ppp {
+		background-color: #000000b8;
+		padding: 10px;
+		margin: 10px;
+	}
+	#review-app .review-why {
+		padding: 10px;
+		margin:10px 120px 10px 120px;
+		background-color: #000000b8;
+	}
+	#review-app div h1{
+		line-height: 30px;
+		text-align: center;
+	}
+	#review-app div p {
+		text-align: center;
+	}
+	#review-app .review-album {
+		display: flex;
+		text-align: center;
+		justify-content: space-around;
+	}
+	#review-app .review-album a p {
+		color: white;
+	}
+	#review-app .review-album  .school {
+		width: 200px;
+		text-decoration: none;
+		height: 200px;
+		top: 0;
+		background-image: url('http://vinhomesoceanparkz.vn/wp-content/uploads/2019/03/Vinschool-niem-tin-giao-duc-1-1.jpg');
+		background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+	
+	}
+	#review-app .review-album  .hospital {
+		width: 200px;
+		text-decoration: none;
+		height: 200px;
+		top: 0;
+		background-image: url('https://vinhomesoceanparkz.vn/wp-content/uploads/2019/03/phong-kham-vinmec-vinhomes-gardenia-1-1.jpg');
+		background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+	
+	}
+	#review-app .review-album  .shopping {
+		width: 200px;
+		text-decoration: none;
+		height: 200px;
+		top: 0;
+		background-image: url('https://vinhomesoceanparkz.vn/wp-content/uploads/2019/03/vincom-1-1.jpg');
+		background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+	
+	}
+	#review-app .review-album  .univer {
+		width: 200px;
+		text-decoration: none;
+		height: 200px;
+		top: 0;
+		background-image: url('https://vinhomesoceanparkz.vn/wp-content/uploads/2019/03/DH-VinUni-VINHOMES-Ocean-Park-1.jpg');
+		background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+	
+	}
+	#review-app .review-album  .water {
+		width: 200px;
+		text-decoration: none;
+		height: 200px;
+		top: 0;
+		background-image: url('https://vinhomesoceanparkz.vn/wp-content/uploads/2019/03/VCT_PV_25_Xuongca_sua-min.jpg');
+		background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+	
+	}
+	#review-app .review-album  .bbq {
+		width: 200px;
+		text-decoration: none;
+		height: 200px;
+		top: 0;
+		background-image: url('https://vinhomesoceanparkz.vn/wp-content/uploads/2019/03/11.jpg');
+		background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+	
+	}
+	
+	#review-app .review-album > a:hover {
+		background-color: #00000080;
+	}
+	.aa {
+		background-color: black;
+		width: 200px;
+		height: 200px;
+		z-index: 9999;
+	}
+	
+	#review-app .review-album > a > p {
+		background-color: #00000069;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	#review-app .review-album > a > p:hover {
+		background-color: #00000080;
+	}
+	#review-app .review-why > h2 {
+		text-align: center;
+		color: #FF00CC;
+	}
+	#review-app .review-why .review-trl {
+		padding: 30px;
+		margin: 20px 160px 20px 160px;
+		color: white;
+	}
+	#review-app .review-why .review-trl .but-fade {
+		display: flex;
+		padding: 3px;
+		margin: 10px;
+		background-color: #663399e3;
+		color: white;
+		text-decoration: none;
+	}
+	#review-app .review-why .review-trl .but-fade p {
+		padding: 0;
+		margin: 0;
+	}
+	#review-app .review-why .review-trl .but-fade > .fa-angle-double-down {
+		margin-left: 5px;
+		margin-right: 20px;
+	}
+	#review-app .review-why .review-trl nav {
+		display: none;
+	}
+	#review-app .review-why .review-trl .but-fade:hover {
+	
+		color: #FF00CC;
+	}
+	/*.bx-wrapper {
+		display: none;
+		color: white;
+		position: fixed;
+		top: 12%;
+		width: 94%;
+		height: 80%;
+	}*/
+	.fa-times-circle {
+		font-size: 30px;
+		position: fixed;
+	}
+	.fa-times-circle:hover {
+		color: black;
+	}
+	
+	/*CONTACT*/
+	
+	#contact {
+		color: white;
+		display: flex;
+		justify-content: space-around;
+	}
+	#contact .contact-lh {
+		background-color: #888888;
+		width: 100%;
+		padding: 20px;
+	}
+	#contact .contact-maps {
+		width: 100%;
+	}
+	#contact .contact-connect {
+		background-color: #888888;
+		width: 100%;
+		padding: 20px;
+		color: white;
+	}
+	#contact .contact-connect img {
+		font-size: 20px;
+	}
+	#contact .contact-connect div i {
+		font-size: 30px;
+	}
+	
+	#contact .contact-lh nav ul > li {
+		list-style: none;
+		margin: 10px;
+		padding: 10px;
+	}
+	#contact .contact-lh nav ul > li > button {
+		padding: 8px;
+		border-radius: 4px;
+	}
+	input[type="text"] {
+		padding: 10px;
+		-webkit-border-radius: 4px;
+		border: 0;
+	}
+	/*MAIN*/
+	@keyframes mainmove {
+		50% {
+			transform: scale(1.2);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	#main {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: 800px;
+		background-image: url(../4.jpg);
+		background-size: cover;
+		text-align: center;
+		background-position: center center;
+		/*animation: mainmove 20s linear infinite;*/
+	}
+	#main .main-home {
+		display: flex;
+		position: fixed;
+		left: 66%;
+		top: 5%;
+		right: 100%;
+		z-index: 9999;
+	}
+	#main .main-home .fa-home:before {
+		content: "\f015";
+		font-size: 102px;
+		color: white;
+	}
+	#main .main-p-home {
+		height: 100%;
+		position: fixed;
+		left:  69%;
+		top:  40%;
+		line-height: 15px;
+		}
+	#main .main-p-home h3 {
+		color: #FFCC00;
+		font-size: 30px;
+	}
+	#main .main-p-home p {
+		color: #FF3300;
+		font-size: 52px;
+		font-family: 'Fugaz One', cursive;
+	}
+	#main .main-p-home p strong {
+		font-size: 52px;
+	}
+	#main .main-p-home a {
+		font-family: 'Dokdo', cursive;
+		font-family: 'Source Sans Pro', sans-serif;
+		text-decoration: none;
+		padding: 10px;
+		color: #363636;
+		background-color: #FF3300;
+		-webkit-border-radius: 10px;
+	}
+	#main .color {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8e0de+0,aebfbc+22,99afab+33,8ea6a2+50,829d98+67,4e5c5a+82,0e0e0e+100;Grey+3D */
+		background: linear-gradient(to right, rgba(216, 224, 222, 0.23) 0%,rgba(174, 191, 188, 0.35) 22%,rgba(153, 175, 171, 0.42) 33%,rgba(142, 166, 162, 0.54) 50%,rgba(130, 157, 152, 0.61) 67%,rgba(78, 92, 90, 0.77) 82%,rgba(14, 14, 14, 0.82) 100%);
+	
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 800px;
+	
+	}
+	a {
+	transition: all 0.2s linear;
+	}
+	
+	/*#jquery*/

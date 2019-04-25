@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel="stylesheet" href="css/horizontal-menu-mult.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <meta name="viewport" content="width=device-width", initial-scale=1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+    </script>
+    <script>
+        $(function(){
+            $('.but-fade-1').click(function(){
+                $('.fade-in-1').slideToggle(200);
+                $('.fade-in-2').slideUp(200);
+                $('.fade-in-3').slideUp(200);
+                $('.fade-in-4').slideUp(200);
+                $('.fade-in-5').slideUp(200);
+            });
+            $('.but-fade-2').click(function(){
+                $('.fade-in-2').slideToggle(200);
+                $('.fade-in-1').slideUp(200);
+                $('.fade-in-3').slideUp(200);
+                $('.fade-in-4').slideUp(200);
+                $('.fade-in-5').slideUp(200);
+            });
+            $('.but-fade-3').click(function(){
+                $('.fade-in-3').slideToggle(200);
+                $('.fade-in-2').slideUp(200);
+                $('.fade-in-1').slideUp(200);
+                $('.fade-in-4').slideUp(200);
+                $('.fade-in-5').slideUp(200);
+            });
+            $('.but-fade-4').click(function(){
+                $('.fade-in-4').slideToggle(200);
+                $('.fade-in-2').slideUp(200);
+                $('.fade-in-3').slideUp(200);
+                $('.fade-in-1').slideUp(200);
+                $('.fade-in-5').slideUp(200);
+            });
+            $('.but-fade-5').click(function(){
+                $('.fade-in-5').slideToggle(200);
+                $('.fade-in-2').slideUp(200);
+                $('.fade-in-3').slideUp(200);
+                $('.fade-in-4').slideUp(200);
+                $('.fade-in-1').slideUp(200);
+            });
+        });
+    </script>
+
+<title>Home</title>
+</head>
+<body>
+    <header id="vh-hd-home">
+    		<img class="click" src="http://vinhomesoceanparkz.vn/wp-content/uploads/2018/10/Logo-white.svg">
+    		<nav>
+    			<ul>
+    				<li><a href="">Trang Chủ</a></li>
+    				<li><a href="#review-home">Tổng quan dự án</a></li>
+    				<li><a href="#location">Vị trí</a></li>
+    				<li><a href="#matbang">Mặt bằng tổng thể</a></li>
+    				<li><a href="#review-app">Tiện ích</a></li>
+    				<li><a href="">Liên hệ</a></li>
+    				<li><a href="">Tin tức</a></li>
+    				<li class="a-phone"><a href=""><i class="fas fa-phone-square"></i> 0123456789</a></li>
+    			</ul>	
+    		</nav>
+    </header> 
+    <div id="vh-p-home">
+        <div class="background-home">
+           
+        </div>
+        <div id="review-home">
+        
+                <h3>TỔNG QUAN DỰ ÁN</h3>
+            
+            <h1>VINHOMES OCEAN PARK</h1>
+            <p style="text-align: left; padding-left: 67px; padding-right: 67px;">Vinhomes Ocean Park Gia Lâm mang tầm vóc một đại đô thị đồng bộ tiện ích như Đảo quốc Singapore. Và hơn thế nữa, dự án sở hữu những đại tiện ích và cảnh quan quy mô tầm cỡ, mới mẻ như: Công viên Gym ngoài trời, công viên BBQ rộng lớn trên nền tảng không gian cây xanh, mặt nước đa dạng.</p>
+        </div>
+    <div id="review-v-home">
+        <nav class="review-nav">
+            <ul>
+                <li><strong>Tên dự án</strong>: Vinhomes Ocean Park (Gia Lâm)</li>
+                <li><strong>Quy mô dự án</strong>: Khoảng 420 ha </li>
+                <li><strong>Chủ đầu tư</strong>: Công ty TNHH Đầu tư & Phát triển đô thị Gia Lâm.</li>
+                <li><strong>Vị trí dự án</strong>: Khu đất vàng – Nằm giữa quốc lộ 5A và 5B. Nằm trên địa phận xã Đa Tốn – Kiêu Kỵ – Dương Xá và một phần thị trấn Trâu Qùy, Huyện Gia Lâm, TP Hà Nội.</li>
+                <li><strong>Khu cao tầng</strong>: Gồm 4 phân khu: The Park, The Sea, The River, The Lake.</li>
+                <li><strong>Khu thấp tầng</strong>: Gồm 4 phân khu: Ngọc Trai, Sao Biển, San Hô, Hải Âu.</li>
+                <li><strong>Khoảng</strong>: 62 ha công viên và cây xanh | Mật độ tb xây dựng: 19.2 %</li>
+                <li><strong>Loại hình sản phẩm</strong>:  66 tòa chung cư và khoảng hơn 2300 căn biệt thự, liền kề, nhà phố thương mại, trung tâm thương mại và các tiện ích dịch vụ.</li>
+                <li><strong>Biển hồ nước mặn</strong>: 6.1ha | Hồ điều hòa : 24.5ha </li>
+            </ul>
+        </nav>
+        <iframe class="review-nav" width="560" height="315" src="https://www.youtube.com/embed/Wsueon8nH4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="icon-home">
+            <div class="icon-p-home">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Vị trí trung tâm huyện Gia Lâm</h3>
+                <p>Hai mặt tiền giáp sông, vị trí xây dựng đắc địa, cơ sở hạ tầng hiện đại và giao thông đồng bộ giúp cư dân dễ dàng di chuyển.</p>
+            </div>
+            <div class="icon-p-home">
+                <i class="fas fa-warehouse"></i>
+                <h3>Chủ đầu tư uy tín bậc nhất</h3>
+                <p>Sản phẩm nhà chất lượng cao mang thương hiệu của tập đoàn Vingroup với mức giá cạnh tranh nhất.</p>
+            </div>
+            <div class="icon-p-home">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h3>Giá trị thực cho khách hàng</h3>
+                <p>Mỗi căn hộ sử dụng nội thất cao cấp, được thiết kế thông minh, tối ưu hóa không gian sử dụng theo cách riêng vừa độc đáo, ấn tượng, sang trọng.</p>
+            </div>
+    </div>
+    <div id="location" class="review-vh">
+        <img src="http://vinhomesoceanparkz.vn/wp-content/uploads/2019/04/VSL_VCOP_Brochure_Vi-tri-VINHOMES-ocean-park-1.jpg">
+        <div class="review-map-p">
+            <h2>Kết Nối Tới Muôn Nơi</h2>
+            <h3>Với vị trí tiềm năng và quy hoạch hạ tầng phát triển</h3>
+            <p>Toạ lạc tại giao điểm vàng của Gia Lâm, chỉ với ít phút di chuyển qua cầu Chương Dương, cầu Vĩnh Tuy và cầu Thanh Trì, Vinhomes Ocean Park Gia Lâm sở hữu ưu thế kết nối thuận tiện và nhanh chóng tới các khu vực trung tâm: từ khu phố cổ náo nhiệt; tới trung tâm hành chính mới phía Tây của thủ đô qua hệ thống đường lớn, đường cao tốc…, từ các trung tâm thương mại, giải trí, mua sắm quy mô lớn phía Đông cho tới các khu dân cư sầm uất cũng như vô vàn tiện ích y tế – giáo dục hiện hữu.</p> 
+
+            <p>Chỉ mất 30 phút để di chuyển tới sân bay quốc tế Nội Bài, Vinhomes Ocean Park đang có trong tay lợi thế lớn về giao thông, mang tới những giá trị hưởng thụ đích thực cho cư dân.</p>
+            <p>Trong tương lai, với quy hoạch 4 cây cầu nghìn tỷ và tuyến đường sắt số 8 trước dự án, cư dân Vinhomes Ocean Park sẽ là những công dân thủ đô đón đầu xu thế sử dụng phương tiện giao thông công cộng hiện.</p>
+        </div>
+    </div>
+    <div id="matbang" class="review-vh">
+        <div class="review-map-p review-map-p2">
+            <h2>MẶT BẰNG TỔNG THỂ</h2>
+            <h3>VINHOMES OCEAN PARK</h3>
+            <p>Sống tại Vinhomes Ocean Park cư dân hoàn toàn yên tâm với quy hoạch “tất cả trong một” từ Trung tâm thương mại, hệ thống trường học lớn từ mầm non đến đại học, bệnh viện đa khoa Vinmec, văn phòng thương mại… để ở bất cứ đâu, cư dân đều có thể thỏa sức “Sống – Làm việc – Hưởng thụ”.</p> 
+            <p>Tổng diện tích: 420ha</p>
+            <p>Mật độ xây dựng: chỉ gần 19%</p>
+            <p>Đất cây xanh, công viên, mặt nước: 117ha</p>
+            <p>Loại hình phát triển:</p>
+            <nav>
+                <ul>
+                    <li>Căn hộ hiện đại</li>
+                    <li>Hệ thống trường Đa dạng từ Mầm non đến Đại học</li>
+                    <li>Trung tâm thương mại</li>
+                    <li>Bệnh viện Đa khoa Vinmec</li>
+                    <li>Văn phòng tiện nghi</li>
+                    <li>Không gian xanh và tiện ích sống thời thượng</li>
+                </ul>
+            </nav>
+        </div>
+        <img src="https://vincitygialam.com.vn/wp-content/uploads/2018/08/d53b0cf4440da553fc1c.jpg">
+    </div>
+    <div id="review-app">
+        <div class="review-app-ppp">
+            <h1>ĐẲNG CẤP 5 SAO</h1>
+            <h1>TIỆN ÍCH ĐỒNG BỘ</h1> 
+            <p><stong>Vinhomes Gia Lâm </stong>được dự kiến sẽ tương tự với các tiện ích đã có trước đây như tiện ích trường học, bệnh viện, siêu thị, trung tâm thương mại, trung tâm mua sắm, siêu thị nội thất, đồ dùng, cảnh quan xanh sinh thái…. tất cả nhằm mang tới cư dân những trải nghiệm cuộc sống trọn vẹn ngay trong khu đô thị, có thể dễ dàng tiếp cận và giúp cư dân có thể vui sống an toàn, thoải mái kết nối với cộng đồng cư dân thân thiện của mình.</p>
+        </div>
+
+        <div class="review-album">
+            <a class="school" href=""><p>HỆ THỐNG TRƯỜNG HỌC</p></a>
+            <a class="hospital" href=""><p>HỆ THỐNG Ý TẾ</p></a>
+            <a class="shopping" href=""><p>TRUNG TÂM THƯƠNG MẠI</p></a>
+            <a class="univer" href=""><p>ĐẠI HỌC VINUNI</p></a>
+            <a class="water" href=""><p>BIỂN HỒ NƯỚC MẶN</p></a>
+            <a class="bbq" href=""><p>VƯỜN NƯỚNG BBQ<p></a>
+        </div>
+        <div class="aaaa">
+            <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="review-why">
+            <h2>TẠI SAO NÊN CHỌN MUA VINHOMES OCEAN PARK?</h2>
+            <div class="review-trl">
+                <div class="but-fade-1 but-fade"><i class="fas fa-angle-double-down"></i><p>Vingroup - Chủ đầu tư UY TÍN</p></div>
+                <nav class="fade-in-1">
+                    <ul>
+                        <li>1 Doanh nghiệp tư nhân lớn nhất Việt Nam.</li>
+                        <li>38 Tỉnh thành có dự án đã hoạt động.</li>
+                        <li>Đạt 4 danh hiệu: CĐT dự án phức hợp , Nhà phát triển BĐS, CĐT du lịch nghỉ dưỡng, CĐT các TTTM … tốt nhất Việt Nam.</li>
+                        <li>1400 căn hộ, biệt thự đã được bàn giao.</li>
+                        <li>Hoạt động nhiều lĩnh vực nổi bật khác: Sản xuất ô tô, điện thoại, công nghệ….</li>
+                        <li>4 triệu thành viên VinID.</li>
+                    </ul>
+                </nav>
+                <div class="but-fade-2 but-fade"><i class="fas fa-angle-double-down"></i><p>Quy hoạch đại đô thị theo chuẩn Singapore</p></div>
+                <nav class="fade-in-2">
+                    <ul>
+                        <li>Tổng diện tích lên tới 420.37ha với 66 tòa căn hộ, mật độ xây dựng chỉ  19.2%.</li>
+                        <li>Diện tích cây xanh 62ha (14.8%).</li>
+                        <li>Diện tích mặt nước 55.2ha (13.2%)</li>
+                        <li>1400 căn hộ, biệt thự đã được bàn giao.</li>
+                        <li>Quy hoạch đại đô thị theo chuẩn Singapore và hơn thế nữa.x</li>
+                    </ul>
+                </nav>
+                <div class="but-fade-3 but-fade"><i class="fas fa-angle-double-down"></i><p>Hệ thống tiện ích đồng bộ & đẳng cấp</p></div>
+                <nav class="fade-in-3">
+                    <ul>
+                        <li>Tổng diện tích mặt nước 55,2ha | Biển hồ nước mặn khoảng 6.1ha</li>
+                        <li>Hồ điều hoà trung tâm khoảng 24.5 ha với các bãi cát trắng ven hồ và hệ thống đường dạo và chạy bộ ven hồ</li>
+                        <li>Khoảng 62ha công viên và cây xanh,  mật độ xây dựng trung bình : 19,2%</li>
+                        <li>Nhiều công viên BBQ với khoảng 100 điểm nướng dã ngoại khắp dự án</li>
+                        <li>Hệ thống công viên ngoài trời được phân bổ khắp khu đô thị, đặc biệt là công viên ven sông.</li>
+                        <li>Hơn 100 sân thể thao đa dạng từ tennis, cầu lông, sân tập bóng rổ..</li>
+                        <li>Rất nhiều bể bơi trong nhà và ngoài trời với diện tích từ hơn 300m2 đến hơn 1000m2 và nhiều sân chơi trẻ em,sân chơi vận động, thảm cỏ dưỡng sinh</li>
+                    </ul>
+                </nav>
+                <div class="but-fade-4 but-fade"><i class="fas fa-angle-double-down"></i><p>Hệ thống giáo dục toàn diện</p></div>
+                <nav class="fade-in-4">
+                    <ul>
+                        <li>Nhiều lựa chọn cho cư dân khi hệ thống giáo dục công lập, quốc tế , tư nhân cùng nằm trong đại đô thị….</li>
+                        <li>Đại học VinUni tiêu chuẩn quốc tế và hệ thống giáo dục toàn diện từ mầm non đến liên cấp Vinschool</li>
+                    </ul>
+                </nav>
+                <div class="but-fade-5 but-fade"><i class="fas fa-angle-double-down"></i><p>Hệ thống giao thông hiện đại</p></div>
+                <nav class="fade-in-5">
+                    <ul>
+                        <li>Với dự tích hợp hệ thống giao thông tập trung theo mô hình TOD của các nước phát triển như Nhật Bản, Mỹ.. Kết nối thuận tiện lên các trục đường lớn, cao tốc rất dễ dàng. </li>
+                        <li>Tuyến đường sắt Metro thuộc tuyến đường sắt đô thị số 8 với 1 nhà ga nằm trong dự án.</li>
+                        <li>Đường 179 đến cao tốc Hà Nội – Hải Phòng rộng 30m ( đã được phê duyệt)</li>
+                    </ul>
+                </nav> 
+            </div> 
+        </div>
+    </div>
+    <div id="contact">
+        <div class="contact-lh">
+            <p>LIÊN HỆ VỚI CHÚNG TÔI</p>
+            <nav>
+                <ul>
+                    <li><input placeholder="HỌ TÊN" type="text" name="name"></li>
+                    <li><input placeholder="EMAIL" type="text" name="email"></li>
+                    <li><input placeholder="SỐ ĐIỆN THOẠI" type="text" name="text"></li>
+                    <li><input placeholder="LỜI NHẮN" type="text" name="text"></li>
+                    <li><button>Send</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=" <!-- width="600" height="450 -->" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="contact-connect">
+            <img src="http://vinhomesoceanparkz.vn/wp-content/uploads/2018/10/Logo-white.svg">
+            <p>KẾT NỐT VỚI CHÚNG TÔI</p>
+            <div>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus-square"></i>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+</body>
+</html>
