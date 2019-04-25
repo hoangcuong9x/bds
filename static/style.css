@@ -183,6 +183,24 @@
 	#review-app .review-album a p {
 		color: white;
 	}
+	input[type="text"] {
+		margin-top: 20px;
+		padding: 10px;
+		-webkit-border-radius: 4px;
+		border: 0;
+	}
+	input[type="email"] {
+		margin-top: 20px;
+		padding: 10px;
+		-webkit-border-radius: 4px;
+		border: 0;
+	}
+	input[type="submit"] {
+		margin-top: 20px;
+		padding: 10px;
+		-webkit-border-radius: 4px;
+		border: 0;
+	}
 	#review-app .review-album  .school {
 		width: 200px;
 		text-decoration: none;

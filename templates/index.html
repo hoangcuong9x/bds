@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
     <meta name="viewport" content="width=device-width", initial-scale=1>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -228,20 +229,13 @@
     <div id="contact">
         <div class="contact-lh">
             <p>LIÊN HỆ VỚI CHÚNG TÔI</p>
-            <nav>
-                <ul>
-                        <form method="POST" action="https://formspree.io/spy12a6@gmail.com">
-                            <input type="email" name="email" placeholder="Your email">
-                            <textarea name="abc" placeholder="Your message"></textarea>
-                            <button type="submit">Send</button>
-                          </form>
-                    <!-- <li><input placeholder="HỌ TÊN" type="text" name="name"></li>
-                    <li><input placeholder="EMAIL" type="text" name="email"></li>
-                    <li><input placeholder="SỐ ĐIỆN THOẠI" type="text" name="text"></li>
-                    <li><input placeholder="LỜI NHẮN" type="text" name="text"></li>
-                    <li><button>Send</button></li> -->
-                </ul>
-            </nav>
+            <form action="https://formspree.io/email@domain.tld" method="POST">
+                            <input placeholder="Họ Tên" type="text" name="name">
+                            <input placeholder="Email" type="email" name="_replyto">
+                            <input placeholder="Số Điện Thoại" type="text" name="phone">
+                            <div><input type="submit" value="Send"></div>
+                            
+                        </form>
         </div>
         <div class="contact-maps">
             <iframe src="https://www.google.com/maps/embed?pb=" <!-- width="600" height="450 -->" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -273,15 +267,13 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Your customer chat code -->
 <div class="fb-customerchat"
   attribution=setup_tool
-  page_id="435297803704649"
-  logged_in_greeting="cần giề nói đê"
-  logged_out_greeting="cần giề nói đê">
+  page_id="435297803704649">
 </div>
 </html>
