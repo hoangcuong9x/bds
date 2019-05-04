@@ -454,3 +454,16 @@
 	}
 	
 	/*#jquery*/
+	/* nhda sanh khach hang */
+	#khachhang {
+		display: inline-block;
+		width: 100%;
+		font-size: 0;
+	}
+	#khachhang .khach {
+		font-size: 15px;
+		border: 2px solid black;
+		display: inline-block;
+		width: 30%;
+		padding-left: 20px;
+	}
