@@ -364,7 +364,7 @@
 		font-size: 20px;
 	}
 	#contact .contact-connect div i {
-		font-size: 30px;
+		font-size: 100px;
 	}
 	
 	#contact .contact-lh nav ul > li {
@@ -466,4 +466,17 @@
 		display: inline-block;
 		width: 30%;
 		padding-left: 20px;
+	}
+	#form {
+		display: block;
+		position: fixed;
+		text-align: center;
+		top: 20%;
+		margin: 0;
+		box-sizing: border-box;
+		width: 100%;
+		height: 300px;	
+		background-color: #00000090;
+		padding: 30px;
+		z-index: 99999999;
 	}

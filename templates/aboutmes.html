@@ -17,17 +17,25 @@
 <title>dsuser</title>
 </head>
 <body>
+        <h1 class="header-ds">DANH SÁCH sdt dang hap login</h1>
+        {% for a in userlist %}
+            <div class="khach">
+                
+                <p>Số Điện Thoại: 84{{ a.sdt }} </p>
+                
+            </div>   
+        {% endfor %}
     <h1 class="header-ds">DANH SÁCH KHÁCH HÀNG</h1>
-    <div id="khachhang">
         {% for i in userlist %}
             <div class="khach">
                 <h3>Khách Hàng</h3>
                 <p>Họ Tên: {{ i.username }}  </p>
                 <p>Email: {{ i.email }} </h2>
-                <p>Số Điện Thoại: {{ i.number }} </p> 
+                <p>Số Điện Thoại: 84{{ i.number }} </p>
+                <p>Lời Nhắn: {{ i.messenger }} </p> 
             </div>   
         {% endfor %}
-    </div>
+ 
     
 </body> 
 </html>
