@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, session, redirect, url_for
 from user import Newbike
+from sdt import New
 import mlab
 import smtplib
 mlab.connect()
@@ -12,16 +13,14 @@ def home():
         return render_template("login.html")
     elif request.method == "POST":
         form = request.form
-        # u = form["username"]
-        # e = form["email"]
         s = form["sdt"]
-        nbike = Newbike(sdt=s.strip())
+        nbi = New(sdt=s.strip())
         if s == '':
             notice = "vui long nhap sdt"
             return render_template("login.html", notice=notice)
         else:
-            nbike.save()
-            return render_template("index.html")
+            nbi.save()
+            return render_template("welcome.html")
 @app.route("/trangchu", methods=["GET", "POST"])
 def trangchu():
     if request.method == "GET":
@@ -41,11 +40,12 @@ def trangchu():
         msg = "Cam on quy khach da quan tam toi du an, goi ngay 012345678 de duoc tu van mien phi"
         server.sendmail("spy12a6@gmail.com", e, msg)
         server.quit()
-        notice = 'tks kiu!'
-        return render_template("index.html", username=u, email=e, number=n, messenger=m, u=u, notice=notice)
+        notice2 = 'tks kiu!'
+        return render_template("index.html", username=u, email=e, number=n, messenger=m, u=u, notice2=notice2)
 @app.route("/list")
 def list():
     userlist = Newbike.objects()
-    return render_template('aboutmes.html', userlist=userlist)     
+    sdtlist = New.objects()
+    return render_template('aboutmes.html', userlist=userlist, sdtlist=sdtlist)     
 if __name__ ==  "__main__":
     app.run(debug=True)
