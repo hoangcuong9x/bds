@@ -10,14 +10,15 @@ app = Flask(__name__)
 def home():
     if request.method == "GET":
         #User request form
+        
         return render_template("login.html")
     elif request.method == "POST":
         form = request.form
         s = form["sdt"]
         nbi = New(sdt=s.strip())
         if s == '':
-            notice = "vui long nhap sdt"
-            return render_template("login.html", notice=notice)
+            warning = "vui long nhap sdt"
+            return render_template("login.html", warning=warning)
         else:
             nbi.save()
             return render_template("welcome.html")
@@ -40,7 +41,7 @@ def trangchu():
         msg = "Cam on quy khach da quan tam toi du an, goi ngay 012345678 de duoc tu van mien phi"
         server.sendmail("spy12a6@gmail.com", e, msg)
         server.quit()
-        notice2 = 'tks kiu!'
+        notice2 = 'tkank you!'
         return render_template("index.html", username=u, email=e, number=n, messenger=m, u=u, notice2=notice2)
 @app.route("/list")
 def list():

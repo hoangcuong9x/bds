@@ -4,5 +4,5 @@ class New(Document):
     meta = {
         "strict": False
     }
-    sdt = IntField()
+    sdt = StringField()
     
