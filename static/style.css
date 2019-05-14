@@ -10,47 +10,49 @@
 	
 	#vh-hd-home {
 		display: flex;
-		/*justify-content: space-between;*/
 		background-color: #00000087;
 		height: 69px;
 		position: fixed;
 		top: 0;
 		width: 100%;
+		white-space: nowrap;
 		z-index: 9999;
-		
-	}
-	#vh-hd-home img {
-		padding-left: 30px;
+		justify-content: space-between;
 	}
 	#vh-hd-home nav {
 		padding: 11px;
 	}
-	#vh-hd-home nav ul {
+	.fa-align-justify {
+		display: none;
+	}
+	#vh-hd-home nav .ul-home {
 		display: flex;
 		box-sizing: border-box;
 	}
-	#vh-hd-home nav ul > li {
+	#vh-hd-home nav .ul-home-res {
+		display: none;
+	}
+	#vh-hd-home nav .ul-home > li {
 		list-style: none;
 	
 	}
-	#vh-hd-home nav ul > li > a {
+	#vh-hd-home nav .ul-home > li > a {
 		text-decoration: none;
 		color: white;
-		vertical-align: baseline;
 		margin-right: 30px;
 		overflow: hidden;
 	
 	}
-	#vh-hd-home nav ul > li > a:hover {
+	#vh-hd-home nav .ul-home > li > a:hover {
 		color: #CC00CC;
 	}
-	#vh-hd-home nav ul .a-phone > a {
+	#vh-hd-home nav .ul-home .a-phone > a {
 		padding: 10px;
 		background-color: #CC00CC;
 		border: #000000a6 solid 1px;
 		-webkit-border-radius: 6px;
 	}
-	#vh-hd-home nav ul .a-phone > a:hover {
+	#vh-hd-home nav .ul-home .a-phone > a:hover {
 		color: white;
 		opacity: 0.8;
 	}
@@ -104,7 +106,10 @@
 		  100% {top: 0px;}
 	}
 	#icon-home .icon-p-home {
-		padding: 60px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		width: 33%;
+		margin: 20px;
 	}
 	#icon-home .icon-p-home > .fas {
 		font-size: 130px;
@@ -136,17 +141,21 @@
 	}
 	.review-vh img {
 		width: 50%;
-		height: 31em;
+		height: 100%;
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 	.review-vh .review-map-p {
 		height: 100%;
 		margin: 0;
+		width: 50%;
 		text-align: center;
 		padding: 45px;
 		background: linear-gradient(to bottom, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 17%,rgba(82,177,82,1) 33%,rgba(0,138,0,1) 67%,rgba(0,87,0,1) 83%,rgba(0,36,0,1) 100%);
 	}
 	.review-vh .review-map-p2 {
 		text-align: left;
+		width: 50%;
 		background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
 	}
 	#review-app {
@@ -219,8 +228,8 @@
 		top: 0;
 		background-image: url('https://vinhomesoceanparkz.vn/wp-content/uploads/2019/03/phong-kham-vinmec-vinhomes-gardenia-1-1.jpg');
 		background-position: center;
-		  background-repeat: no-repeat;
-		  background-size: cover;
+		background-repeat: no-repeat;
+		background-size: cover;
 	
 	}
 	input.lh {
@@ -297,7 +306,6 @@
 	}
 	#review-app .review-why .review-trl {
 		padding: 30px;
-		margin: 20px 160px 20px 160px;
 		color: white;
 	}
 	#review-app .review-why .review-trl .but-fade {
@@ -323,14 +331,6 @@
 	
 		color: #FF00CC;
 	}
-	/*.bx-wrapper {
-		display: none;
-		color: white;
-		position: fixed;
-		top: 12%;
-		width: 94%;
-		height: 80%;
-	}*/
 	.fa-times-circle {
 		font-size: 30px;
 		position: fixed;
@@ -344,19 +344,19 @@
 	#contact {
 		color: white;
 		display: flex;
-		justify-content: space-around;
+		width: 100%;
 	}
 	#contact .contact-lh {
 		background-color: #888888;
-		width: 100%;
+		width: 20%;
 		padding: 20px;
 	}
 	#contact .contact-maps {
-		width: 100%;
+		width: 60%;
 	}
 	#contact .contact-connect {
 		background-color: #888888;
-		width: 100%;
+		width: 20%;
 		padding: 20px;
 		color: white;
 	}
@@ -364,7 +364,7 @@
 		font-size: 20px;
 	}
 	#contact .contact-connect div i {
-		font-size: 100px;
+		font-size: 20px;
 	}
 	
 	#contact .contact-lh nav ul > li {
@@ -479,4 +479,78 @@
 	}
 	#form > p {
 		margin-top: 150px;
+	}
+
+/* responsive */
+
+	@media only screen 
+	and (max-width : 1024px) {
+
+		#vh-hd-home {
+			justify-content: space-between;
+			position: fixed;
+			width: 100%;
+			
+		}
+		#vh-hd-home nav .ul-home {
+			display: none;
+		}
+		#vh-hd-home nav .ul-home-res{
+			display: none;
+			margin: 0;
+			text-align: center;
+			list-style: none;
+			width: 100%;
+			margin: 0;
+			line-height: 33px;
+			background-color: #0000007d;
+			position: absolute;
+			left: 0;
+			top: 100%;
+		}
+		#vh-hd-home nav .ul-home-res > li a {
+			text-decoration: none;
+			color: white;
+		}
+		#vh-hd-home .fa-align-justify {
+			display: block;
+			color: white;
+			font-size: 42px;
+			padding: 12px;
+		}
+		.fa-align-justify:hover {
+			background-color: #00000047;
+		}
+		.a-phone {
+			display: none;
+		}
+		#review-v-home {
+			display: block;
+		}
+		#review-v-home .review-nav {
+			display: block;
+			width: 100%;
+		}
+		#icon-home {
+			display: block;
+			text-align: center;
+		}
+		#icon-home .icon-p-home {
+			display: block;
+			width: 100%;
+			margin: 0;
+			padding-top: 20px;
+			border-bottom: 1px solid white;
+		}
+		#location {
+			display: block;
+		}
+		#location img {
+			width: 100%;
+		}
+		#location .review-map-p {
+			padding: 0;
+			width: 100%;
+		}
+
 	}
